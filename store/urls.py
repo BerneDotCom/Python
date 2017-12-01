@@ -4,5 +4,9 @@ from . import views
 
 urlpatterns = [
     url(r'^(\w+)$', views.welcome),
-    url(r'liste/', views.liste),
+    url(r'author/(\w+)$', views.author),
+    url(r'author/liste/', views.authorList),
+    url(r'articles/liste/', views.articleList),
+    url(r'article/(\w+)$', views.article),
+
 ]

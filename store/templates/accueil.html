@@ -5,7 +5,9 @@
         <title>Bien sur la page</title>
     </head>
     <body>
-        <h1>{{ welcomeText }}</h1>
-        <p>Lang : {{ lang }}</p>
+      {% for message in resultSet %}
+        <h1>{{ message.welcomeText }}</h1>
+        <p>Lang : {{ message.lang }}</p>
+      {% endfor %}
     </body>
 <html>

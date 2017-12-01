@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Liste des articles</title>
+    </head>
+    <body>
+      <table>
+        <thead>
+          <tr>
+            <td>Titre</td>
+            <td>Description</td>
+            <td>Auteur</td>
+          </tr>
+        </thead>
+        <tbody>
+          {% for article in resultSet %}
+          <tr>
+            <td>{{ article.title }}</td>
+            <td>{{ article.desc }}</td>
+            <td>{{ article.author.name }} - {{ article.author.lastname }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </body>
+<html>

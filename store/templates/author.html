@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Détails d'un auteur</title>
+    </head>
+    <body>
+      {% for author in resultSet %}
+        <h1>{{ author.name }}</h1>
+        <p>Last name : {{ author.lastname }}</p>
+      {% endfor %}
+    </body>
+<html>
